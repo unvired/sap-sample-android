@@ -6,7 +6,8 @@ package com.unvired.sample.sap.util;
 
 public class Constants {
     // App Name
-    public static final String APPLICATION_NAME = "Unvired SAP Sample";
+    public static final String APPLICATION_NAME = "UnviredSAPSample";
+    public static final String APPLICATION_TITLE = "Unvired SAP Sample";
 
     // BE Names
     public static final String BE_PERSON = "PERSON";

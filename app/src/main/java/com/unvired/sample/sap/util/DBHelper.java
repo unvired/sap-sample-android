@@ -4,6 +4,7 @@ import com.unvired.core.ApplicationManager;
 import com.unvired.database.DBException;
 import com.unvired.database.IDataManager;
 import com.unvired.database.IDataStructure;
+import com.unvired.logger.Logger;
 import com.unvired.sample.sap.be.E_MAIL;
 import com.unvired.sample.sap.be.PERSON_HEADER;
 
@@ -25,7 +26,7 @@ public class DBHelper {
         try {
             iDataManager = ApplicationManager.getInstance().getDataManager();
         } catch (DBException e) {
-            e.printStackTrace();
+            Logger.e(e.getMessage());
         }
     }
 
@@ -41,7 +42,7 @@ public class DBHelper {
         try {
             iDataManager.insertOrUpdateBasedOnGID(header);
         } catch (DBException e) {
-            e.printStackTrace();
+            Logger.e(e.getMessage());
         }
     }
 
@@ -49,7 +50,7 @@ public class DBHelper {
         try {
             iDataManager.insertOrUpdateBasedOnGID(header);
         } catch (DBException e) {
-            e.printStackTrace();
+            Logger.e(e.getMessage());
         }
     }
 
@@ -66,7 +67,7 @@ public class DBHelper {
                 }
             }
         } catch (DBException e) {
-            e.printStackTrace();
+            Logger.e(e.getMessage());
             return null;
         }
 
@@ -93,7 +94,7 @@ public class DBHelper {
                 }
             }
         } catch (DBException e) {
-            e.printStackTrace();
+            Logger.e(e.getMessage());
             return null;
         }
 
