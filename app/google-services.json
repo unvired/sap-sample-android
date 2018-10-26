@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "725868549372",
+    "firebase_url": "https://unvired-sample-sap.firebaseio.com",
+    "project_id": "unvired-sample-sap",
+    "storage_bucket": "unvired-sample-sap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725868549372:android:859e19a44ac87f39",
+        "android_client_info": {
+          "package_name": "com.unvired.sample.sap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725868549372-nmfbdi6m56chf67cck6vbdrkcd4a1ouq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU5k2aqS_ki4MIrUACqctdwgkUjsYO6PA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,8 +12,11 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.unvired.database.DBException;
 import com.unvired.exception.ApplicationException;
+import com.unvired.fcm.RegisterToFCM;
 import com.unvired.logger.Logger;
 import com.unvired.login.AuthenticationService;
 import com.unvired.login.LoginListener;
@@ -154,10 +157,9 @@ public class StartUpActivity extends AppCompatActivity implements LoginListener 
         switch (result) {
             case ConnectionResult.SUCCESS:
                 //***************GCM Start************************
-                // Start IntentService to register this application with GCM.
-                Intent intent = new Intent(this, com.unvired.gcm.RegistrationIntentService.class);
-                startService(intent);
-
+                FirebaseApp.initializeApp(this);
+                FirebaseMessaging.getInstance().setAutoInitEnabled(true);
+                RegisterToFCM.sendRegistrationToServer();
                 //***************GCM End************************
 
                 navigateToHomeActivity();
