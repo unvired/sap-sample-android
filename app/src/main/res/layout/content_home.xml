@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="56dp"
     android:orientation="vertical"
-    tools:context="com.unvired.sample.sap.activities.HomeActivity"
+    tools:context="com.unvired.sapsample.activities.HomeActivity"
     tools:showIn="@layout/activity_home">
 
     <android.support.v7.widget.RecyclerView
