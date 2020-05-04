@@ -13,6 +13,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 import com.unvired.database.DBException;
 import com.unvired.database.IDataStructure;
@@ -73,7 +74,8 @@ public class GetPersonActivity extends AppCompatActivity {
                     PERSON_HEADER header = new PERSON_HEADER();
 
                     if (personNum.getText() == null || personNum.getText().toString().isEmpty()) {
-                        ((TextInputLayout) personNum.getParentForAccessibility()).setError("Please provide Person Number");
+//                        ((TextInputLayout) personNum.getParentForAccessibility()).setError("Please provide Person Number");
+                        Toast.makeText(getApplicationContext(),"Please provide Person Number",Toast.LENGTH_SHORT).show();
                         return;
                     }
 

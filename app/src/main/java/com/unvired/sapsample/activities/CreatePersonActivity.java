@@ -329,14 +329,16 @@ public class CreatePersonActivity extends AppCompatActivity {
 
     private boolean isValid() {
         if (lName.getText() == null || lName.getText().toString().isEmpty()) {
-            ((TextInputLayout) lName.getParentForAccessibility()).setError("Last name is mandatory");
+//            ((TextInputLayout) lName.getParentForAccessibility()).setError("Last name is mandatory");
+            Toast.makeText(getApplicationContext(),"Last name is mandatory",Toast.LENGTH_SHORT).show();
             lName.findFocus();
             lName.requestFocus();
             return false;
         }
 
         if ((gender.getText() == null || gender.getText().toString().isEmpty())) {
-            ((TextInputLayout) gender.getParentForAccessibility()).setError("Please specify gender");
+//            ((TextInputLayout) gender.getParentForAccessibility()).setError("Please specify gender");
+            Toast.makeText(getApplicationContext(),"Last name is mandatory",Toast.LENGTH_SHORT).show();
             gender.findFocus();
             gender.requestFocus();
             return false;
